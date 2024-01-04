@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+body {
+    height: auto;
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 34, 128), rgb(122, 122, 255));
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #e6e6e6;
+    color: #081933;
+    border: 1px solid #1a4a92;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .2s;
+    display: flex;
+}
+
+button:hover {
+    background-color: #1a4a92;
+    color: #FFF;
+}
+
+button:hover > i {
+    color: #FFF;
+}
+
+button i {
+    color: #1a4a92;
+    pointer-events: none;
+}
+
+select {
+    color: #3a3a3a;
+}
+
+option {
+    color: #3a3a3a;
+}
+
+input {
+    padding: .2rem .4rem;
+    color: #3a3a3a;
+    border: none;
+    border-radius: 7px;
+}
+
+select {
+    padding: .2rem .3rem;
+    border-radius: 7px;
+}
+
+.hide {
+    display: none;
+}
+
+.main-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: #003fb4;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.main-container header {
+    text-align: center;
+    padding: .5rem 1rem;
+    border-bottom: 1.5px solid #dadada;
+}
+
+#task-form,
+#edit-form {
+    padding: 1rem;
+    border-bottom: 1.5px solid #dadada;
+}
+
+#task-form p,
+#edit-form p {
+    margin-bottom: .3rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .5rem;
+}
+
+#cancel-edit-btn {
+    margin-top: .5rem;
+    font-size: .9rem;
+    padding: .3rem .6rem;
+}
+
+#toolbar {
+    padding: 1.2rem;
+    border-bottom: 1.5px solid #dadada;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: .5rem;
+}
+
+#search {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: .5rem;
+}
+
+#filter {
+    width: 40%;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #dadada;
+    transition: .2s;
+}
+
+.task h3 {
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.task button {
+    margin-left: .3rem;
+}
+
+.done {
+    background-color: #00a71c;
+}
+
+.done h3 {
+    text-decoration: line-through;
+    font-style: italic;
+}
